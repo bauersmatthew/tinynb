@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "tinynb"
+version = "0.1.0"
+description = ""
+authors = ["Matthew Bauer <bauer.s.matthew@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mistune = "^3.0.1"
+
+[tool.poetry.group.test.dependencies]
+seaborn = "^0.12.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
