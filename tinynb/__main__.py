@@ -82,19 +82,19 @@ class MyRenderer(mistune.HTMLRenderer):
 
         # Set up execution environment
         emitted = []
-        class MMD:
+        class TNB:
             def emit(obj, name = None):
                 if name is None:
                     name = f'Output {len(emitted)+1}'
                 html = render_any(obj)
                 emitted.append((name, html))
-        self.g['mmd'] = MMD
+        self.g['tnb'] = TNB
 
         exec(code, self.g)
 
         if FLAGS.PLOT_GCF:
             import matplotlib.pyplot as plt
-            MMD.emit(plt.gcf())
+            TNB.emit(plt.gcf())
 
         # Combine multiple outputs into an accordion
         n = len(emitted)

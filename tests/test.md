@@ -7,7 +7,7 @@ Hello.
 x = 5
 y = x*2
 
-mmd.emit(y)
+tnb.emit(y)
 ```
 
 Hello, *hi*, howdy.
@@ -44,7 +44,7 @@ x = np.array([1,2,3])
 y = x*x
 sns.relplot(x = x, y = y)
 
-mmd.emit(plt.gcf())
+tnb.emit(plt.gcf())
 ```
 
 This should do the same thing:
@@ -62,13 +62,13 @@ import matplotlib.pyplot as plt
 
 sns.relplot(x = x, y = y)
 p1 = plt.gcf()
-mmd.emit(p1)
+tnb.emit(p1)
 
 sns.relplot(x = y, y = x)
 p2 = plt.gcf()
-mmd.emit(p2)
+tnb.emit(p2)
 
-mmd.emit('This is some text. Hi!')
+tnb.emit('This is some text. Hi!')
 ```
 
 It should also be OK to have no output:
@@ -96,5 +96,5 @@ Fallback renderer calls repr:
 import pandas as pd
 
 table = pd.DataFrame(dict(a = [1,2,3], b = [4,5,6]))
-mmd.emit(table)
+tnb.emit(table)
 ```
