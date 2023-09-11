@@ -151,10 +151,10 @@ body {
   border-style: none dashed none none;
   border-color: black;
   border-width: 2px;
-  max-width: 1250px;
+  max-width: 1000px;
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1000px) {
   body {
     border-style: none;
     margin: 25px 10px 500px 10px;
