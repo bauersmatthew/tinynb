@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "tinynb"
-version = "0.1.0"
+version = "0.2.0"
 description = ""
 authors = ["Matthew Bauer <bauer.s.matthew@gmail.com>"]
 readme = "README.md"
